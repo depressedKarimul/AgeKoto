@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>বয়স ক্যালকুলেটর</title>
+ <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="dot"></div>
+      <h1>জন্মতারিখ থেকে বয়স ক্যালকুলেটর</h1>
+    </header>
+
+    <form id="ageForm" autocomplete="off">
+      <div class="field">
+        <label for="dob">জন্মতারিখ নির্বাচন করুন</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+      <div class="actions">
+        <button type="submit" class="primary">হিসাব করুন</button>
+        <button type="button" class="ghost" id="clearBtn">Clear</button>
+      </div>
+      <div id="msg"></div>
+    </form>
+
+    <div class="result" id="result" hidden>
+      <div class="grid">
+        <div class="card">
+          <h3>আজকের তারিখ</h3>
+          <div class="big" id="todayStr">—</div>
+        </div>
+        <div class="card">
+          <h3>বয়স (বছর–মাস–দিন)</h3>
+          <div class="big"><span id="years">0</span> বছর <span id="months">0</span> মাস <span id="days">0</span> দিন</div>
+        </div>
+        <div class="card">
+          <h3>মোট দিন</h3>
+          <div class="big" id="totalDays">0</div>
+          <div class="muted" id="meta"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>নোট: ভবিষ্যতের কোনো তারিখ দিলে ত্রুটি দেখানো হবে।</footer>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
