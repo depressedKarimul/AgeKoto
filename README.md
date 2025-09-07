@@ -1,5 +1,5 @@
 # Welcome to AgeKoto app 👋  
-### Easily calculate your age with just one click using this app 🎉
+### Easily calculate your age with just one click using this app 🎉🔥🔥
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
